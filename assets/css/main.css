@@ -1,0 +1,32 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    background: #F9FAFC;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding-top: 10em;
+}
+
+header h1 {
+    color: #818181;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+header hr {
+    border: solid 0.25em #FBBB12;
+    width: 5%;
+}
+
+header p {
+    font-weight: 300;
+    color: #818181;
+}
