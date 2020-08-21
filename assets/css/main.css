@@ -3,15 +3,33 @@ body {
     font-size: 15px;
 }
 
+.dx-nav {
+    background: transparent;
+    transition: ease-in 0.2s;
+    border-bottom: 1px solid transparent;
+}
+
+.dx-nav-active {
+    background: #fff !important;
+    border-bottom: 1px solid #FBBB12;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+    transition: ease-in 0.2s;
+}
+
 header {
+    position: relative;
     background: #F9FAFC;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    padding-top: 10em;
+    padding-top: 12em;
+    padding-bottom: 10em;
+    margin-bottom: 10em;
+    margin-top: -4.5em;
+    transform: skewY(-4deg);
+}
+
+header .col-md-10 {
+    transform: skewY(4deg);
 }
 
 header h1 {
@@ -21,11 +39,148 @@ header h1 {
 }
 
 header hr {
-    border: solid 0.25em #FBBB12;
-    width: 5%;
+    border: solid 0.15em #FBBB12;
+    width: 75px;
+    background-color: #FBBB12;
 }
 
 header p {
     font-weight: 300;
     color: #818181;
+}
+
+header button {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    outline: none;
+}
+
+header .btn-odx {
+    color: #fff;
+    background: #FBBB12;
+    border: none;
+    border-radius: 0;
+    height: 51px;
+    width: 192px;
+    font-weight: 600;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(251,187,18,1);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(251,187,18,1);
+    box-shadow: 0px 0px 60px 0px rgba(251,187,18,1);
+}
+
+header .btn-odx::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    color: #fff;
+    margin-left: 5px;
+}
+
+header .btn-odx:hover {
+    background: #ffd04e;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(255,208,78,1);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(255,208,78,1);
+    box-shadow: 0px 0px 60px 0px rgba(255,208,78,1);
+    color: #fff;
+}
+
+header .btn-odx:focus {
+    background: #FBBB12;
+    outline: none;
+}
+
+header #rotate  {
+    transform: rotate(90deg);
+    position: absolute;
+    right: -4.5em;
+    top: 30em;
+}
+
+header #rotate p {
+    font-weight: 500;
+    color: #C7C7C7;
+}
+
+header #rotate i {
+    font-size: 2em;
+    position: absolute;
+    bottom: 0.20em;
+    right: -1.5em;
+    color: #FBBB12 ;
+}
+
+header .dx-hr {
+    border: 3px solid #FBBB12;
+    border-radius: 1em;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    bottom: -1em;
+}
+
+section {
+    position: relative;
+}
+
+section div.title h4 {
+    font-weight: 200;
+    color: #818181;
+}
+
+section div.title hr {
+    border: solid 0.25em #97FFC8;
+    width: 75px;
+    background-color: #97FFC8;
+}
+
+section div.orange hr {
+    background-color: #FBBB12;
+    border: solid 0.25em #FBBB12;
+}
+
+section div.content img {
+    background-color: #97FFC8 ;
+    border: 4px solid hsla(43, 100%, 95%, 0.388);
+    border-radius: 3em;
+    width: 80px;
+    height: 80px;
+    padding: 0.50em;
+}
+
+section div.content div.plug {
+    border: solid 1px hsla(0, 0%, 89%, 0.404);
+    border-radius: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.btn-scrollTop {
+    background: #FBBB12;
+    width: 70px;
+    height: 70px;
+    border-radius: 10em;
+}
+
+
+@media (max-width: 768px) {
+
+header #rotate {
+    display: none;
+}
+
+header h1 {
+    color: #818181;
+    font-size: 37px;
+    font-weight: 600;
+}
+
+header button {
+    top: 100%;
+}
+
 }
