@@ -18,18 +18,38 @@ body {
     transition: ease-in 0.2s;
 }
 
+
 header {
+    height: 100vh;
+    min-height: 500px;
+    background: #f9fafc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    background: #F9FAFC;
-    padding-top: 12em;
-    padding-bottom: 10em;
-    margin-bottom: 10em;
-    margin-top: -4.5em;
-    transform: skewY(-4deg);
+    z-index: 1;
+    margin-bottom: 8em;
 }
 
-header .col-md-10 {
-    transform: skewY(4deg);
+header::after {
+    background: inherit;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+header:after {
+    bottom: 0;
+    -webkit-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
 }
 
 header h1 {
@@ -58,6 +78,10 @@ header button {
     margin: auto;
     outline: none;
 }
+
+.btn:focus {
+    box-shadow: none;
+  }
 
 header .btn-odx {
     color: #fff;
@@ -161,11 +185,41 @@ section div.content div.plug {
 
 .btn-scrollTop {
     background: #FBBB12;
-    width: 70px;
-    height: 70px;
-    border-radius: 10em;
+    height: 1em;
+    width: 3em;
+    border-radius: 0em;
+    transition: ease 0.1s;
+    margin-bottom: -1em;
+    margin-top: -0.20;
 }
 
+.btn-scrollTop:hover {
+    transition: ease 0.1s;
+    height: 1.3em;
+}
+
+.btn-scrollTop i {
+    margin-left: -0.66em;
+    margin-top: -1.1em;
+    position: absolute;
+    font-size: 2em;
+    transition: ease 0.2s;
+}
+
+.btn-scrollTop i:hover {
+    margin-top: -1.25em;
+    transition: ease 0.2s;
+}
+
+
+#scrollTop {
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    bottom: 20px;
+    opacity: 0;
+    transition: ease 0.5s;
+}
 
 @media (max-width: 768px) {
 
@@ -183,4 +237,13 @@ header button {
     top: 100%;
 }
 
+}
+
+@media only screen and (max-width: 320px) and (max-width: 568px) {
+header h1 {
+    color: #818181;
+    font-size: 30px;
+    font-weight: 600;
+    }
+    
 }
