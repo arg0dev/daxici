@@ -3,6 +3,39 @@ body {
     font-size: 15px;
 }
 
+.navbar-light .navbar-toggler {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.m1, .m2, .m3 {
+    width: 28px;
+    height: 2px;
+    background-color: #818181;
+    margin: 7px 0;
+    transition: ease 0.3s;
+}
+
+.flipper .m1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+    transition: ease 0.3s;
+    background-color: #FBBB12;
+}
+
+.flipper .m2 {
+    opacity: 0;
+    transition: ease 0.3s;
+}
+
+.flipper .m3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-6px, -5px);
+    transition: ease 0.3s;
+    background-color: #FBBB12;
+}
+
 .dx-nav {
     background: transparent;
     transition: ease-in 0.2s;
@@ -21,7 +54,7 @@ body {
 
 header {
     height: 100vh;
-    min-height: 500px;
+    min-height: 500px !important;
     background: #f9fafc;
     background-size: cover;
     background-position: center;
@@ -122,7 +155,7 @@ header #rotate  {
     transform: rotate(90deg);
     position: absolute;
     right: -4.5em;
-    top: 30em;
+    top: 20em;
 }
 
 header #rotate p {
@@ -221,6 +254,8 @@ section div.content div.plug {
     transition: ease 0.5s;
 }
 
+
+
 @media (max-width: 768px) {
 
 header #rotate {
@@ -247,3 +282,22 @@ header h1 {
     }
     
 }
+
+@media (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) {
+header {
+    min-height: 110vw !important;
+    }
+}
+
+@media only screen and (width:37.5em) and (height:28.125em) { 
+	header {
+        min-height: 120vw !important;
+    }
+}
+
+@media only screen and (min-width:48.0625em) and (min-height:0em) { 
+    header {
+        padding-top: 5em !important;
+    }
+}
+
