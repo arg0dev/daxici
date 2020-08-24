@@ -254,7 +254,149 @@ section div.content div.plug {
     transition: ease 0.5s;
 }
 
+.screen::after{
+    background-color: #f9fafc;
+    position: absolute;
+    padding: 10em;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
 
+.screen {
+    padding-bottom: 5em ;
+}
+
+.screen img {
+    border: solid 1px rgb(230, 230, 230);
+    border-radius: 3em;
+    padding: 0.10em;
+}
+
+.item {
+    outline: none;
+    box-shadow: none;
+}
+
+.dx_swp {
+    background: #f9fafc;
+    padding-bottom: 15em;
+}
+
+#dx-mswp {
+    display: none !important;
+}
+
+.btn-odx-orange {
+    color: #FBBB12;
+    background: transparent;
+    border: solid 2px #FBBB12;
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10em;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.btn-odx-orange:hover {
+    background: #fbbb12;
+    color: #fff !important;
+}
+
+div.dx-monocrome {
+    background: rgba(0, 0, 0, 0.600);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+footer {
+    position: relative;
+    color: #fff;
+}
+
+footer::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    content: "";
+    filter: grayscale();
+    background: url('https://source.unsplash.com/oxQ0egaQMfU/1920x1080');
+}
+
+.ft-cont {
+    padding-top: 3em;
+}
+
+footer h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+footer h2 {
+    font-weight: 200;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer div.dx-ftph {
+    margin-top: -10em;
+}
+
+footer hr {
+    border-width: thin;
+    border-color: hsla(0, 0%, 100%, 0.250);
+    z-index: 999;
+    width: 100%;
+}
+
+footer .btn-odx-red {
+    color: #fff;
+    background: #FF4848;
+    border: none;
+    border-radius: 0;
+    height: 51px;
+    width: 192px;
+    font-weight: 600;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 60px 0px #FF4848;
+    -moz-box-shadow: 0px 0px 60px 0px #FF4848;
+    box-shadow: 0px 0px 60px 0px #FF4848;
+}
+
+footer .btn-odx-red:hover {
+    color: #fff;
+    box-shadow: none;
+}
+
+footer div.copyright{
+    z-index: 1;
+}
+
+
+@media (max-width: 991px) {
+ #dx-mswp {
+     display: block !important;
+ }
+
+ #dx-dswp {
+     display: none !important;
+ }
+
+}
 
 @media (max-width: 768px) {
 
