@@ -51,6 +51,28 @@ body {
     transition: ease-in 0.2s;
 }
 
+.report {
+
+}
+
+#rw-f {
+    color: #fff;
+}
+
+.report::after {
+    color: #fff !important;
+    background: #FF4848;
+    height: 30px;
+    width: 60px;
+    margin-right: 0.98em;
+    margin-top: 0.5em;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
 
 header {
     height: 100vh;
@@ -255,7 +277,7 @@ section div.content div.plug {
 }
 
 .screen::after{
-    background-color: #f9fafc;
+    background-color: #f0f0f094;
     position: absolute;
     padding: 10em;
     content: "";
@@ -270,7 +292,7 @@ section div.content div.plug {
 }
 
 .screen img {
-    border: solid 1px rgb(230, 230, 230);
+    border: solid 1.5px rgb(230, 230, 230);
     border-radius: 3em;
     padding: 0.10em;
 }
@@ -281,7 +303,7 @@ section div.content div.plug {
 }
 
 .dx_swp {
-    background: #f9fafc;
+    background: #f0f0f094;
     padding-bottom: 15em;
 }
 
@@ -350,6 +372,16 @@ footer h2 {
 
 footer p {
     font-weight: 300;
+    text-decoration: none;
+}
+
+footer p span {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
 
 footer div.dx-ftph {
@@ -386,6 +418,9 @@ footer div.copyright{
     z-index: 1;
 }
 
+#dx-dswp {
+    display: block !important;
+}
 
 @media (max-width: 991px) {
  #dx-mswp {
@@ -395,6 +430,18 @@ footer div.copyright{
  #dx-dswp {
      display: none !important;
  }
+
+ .report::after {
+    display: none !important;
+}
+
+.report {
+    color: #FF4848 !important;
+}
+
+#rw-f {
+    color: #FF4848 !important;
+}
 
 }
 

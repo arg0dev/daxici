@@ -25,7 +25,7 @@ $(function () {
 
   $(function () {
     $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 1770 ) {
+        if ( $(window).scrollTop() > 1690 ) {
             document.getElementById("js-clr").style.color = "#fff";
         } else {
             document.getElementById("js-clr").style.color = "#000";

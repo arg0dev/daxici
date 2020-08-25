@@ -68,13 +68,13 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a href="#properties" duration="1000" easing="smooth" scrollTo="properties" class="nav-link scrollOnClick">Properties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a href="#gallery" duration="1000" easing="smooth" scrollTo="gallery" class="nav-link scrollOnClick">Images</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link report" href="mailto:arg0@dev">Bug <span id="rw-f">Report</span></a>
           </li>
         </ul>
       </div>
@@ -92,18 +92,17 @@
             euismod justo.
             <br />Vivamus tincidunt eleifend nibh ut maximus.</p>
           <img class="img-fluid" width="750" src="/assets/img/tx_b.gif">
-          <a href="#download"><button type="button" class="btn btn-odx">DOWNLOAD NOW</button></a>
+          <a href="#download" duration="1000" easing="smooth" class="scrollOnClick" scrollTo="download"><button type="button" class="btn btn-odx">DOWNLOAD NOW</button></a>
           <div id="rotate">
             <p><span>Scroll Down</span><i class="ml-3 fi-xnlrxl-arrow-simple"></i>
               <hr class="dx-hr">
             </p>
-
           </div>
         </div>
       </div>
     </div>
+    <div id="properties"></div>
   </header>
-
   <section class="mt-5 pb-5">
     <div class="container-fluid col-md-11">
       <div class="title text-center mb-5">
@@ -178,7 +177,7 @@
     </div>
   </section>
 
-
+  <div id="gallery"></div>
   <section class="mt-5 pb-5 pt-5">
     <div class="container-fluid col-md-11">
       <div class="title orange text-center mb-5">
@@ -188,49 +187,46 @@
   </section>
 
   <!-- DESKTOP CAROUSEL #START -->
-  <div class="arg0_swiper screen" id="dx-dswp" style="float: none; margin: 0 auto;">
-    <div class="item">
-      <div class="col-md-12">
-        <div class="container-fluid text-center">
-          <div class="row">
-            <div class="col-md-3 ct-box">
+  <div class="arg0_swiper screen" id="dx-dswp">
+    <div class="item d-flex">
+      <div class="col-md-11" style="float: none; margin: 0 auto;">
+      <div class="container-fluid d-flex">
+            <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
               <img src="/assets/img/screen/tr_TR/dx_loc.png" class="img-fluid" width="250">
             </div>
-            <div class="col-md-3 ct-box">
+            <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
               <img src="/assets/img/screen/tr_TR/dx_choose.png" class="img-fluid" width="250">
             </div>
-            <div class="col-md-3 ct-box">
+            <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
               <img src="/assets/img/screen/tr_TR/dx_menu.png" class="img-fluid" width="250">
             </div>
-            <div class="col-md-3 ct-box">
+            <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
               <img src="/assets/img/screen/tr_TR/dx_accept.png" class="img-fluid" width="250">
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="col-md-11" style="float: none; margin: 0 auto;">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-3 ct-box">
-              <img src="/assets/img/screen/tr_TR/dx_over.png" class="img-fluid" width="250">
-            </div>
-            <div class="col-md-3 ct-box">
-              <img src="/assets/img/screen/tr_TR/dx_plan.png" class="img-fluid" width="250">
-            </div>
-            <div class="col-md-3 ct-box">
-              <img src="/assets/img/screen/tr_TR/dx_review.png" class="img-fluid" width="250">
-            </div>
-            <div class="col-md-3 ct-box">
-              <img src="/assets/img/screen/tr_TR/dx_started.png" class="img-fluid" width="250">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
+
+<div class="item d-flex">
+  <div class="col-md-11" style="float: none; margin: 0 auto;">
+  <div class="container-fluid d-flex">
+        <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
+          <img src="/assets/img/screen/tr_TR/dx_over.png" class="img-fluid" width="250">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
+          <img src="/assets/img/screen/tr_TR/dx_plan.png" class="img-fluid" width="250">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
+          <img src="/assets/img/screen/tr_TR/dx_review.png" class="img-fluid" width="250">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center ct-box">
+          <img src="/assets/img/screen/tr_TR/dx_started.png" class="img-fluid" width="250">
+        </div>
+      </div>
+</div>
+</div>
+  </div>
+
   <!-- DESKTOP CAROUSEL #END -->
 
   <!-- MOBILE CAROUSEL #START -->
@@ -238,7 +234,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center ct-box">
             <img src="/assets/img/screen/tr_TR/dx_loc.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -248,7 +244,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center  ct-box">
             <img src="/assets/img/screen/tr_TR/dx_choose.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -258,7 +254,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center  ct-box">
             <img src="/assets/img/screen/tr_TR/dx_menu.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -268,7 +264,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center  ct-box">
             <img src="/assets/img/screen/tr_TR/dx_accept.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -278,7 +274,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center  ct-box">
             <img src="/assets/img/screen/tr_TR/dx_over.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -288,7 +284,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center  ct-box">
             <img src="/assets/img/screen/tr_TR/dx_plan.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -298,7 +294,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center  ct-box">
             <img src="/assets/img/screen/tr_TR/dx_review.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -308,7 +304,7 @@
     <div class="item">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center ct-box">
+          <div class="col-md-12 d-flex justify-content-center align-items-center ct-box">
             <img src="/assets/img/screen/tr_TR/dx_started.png" class="img-fluid" width="250">
           </div>
         </div>
@@ -357,7 +353,7 @@
               <img src="/assets/img/dx_w.png" width="94.14" height="37.27">
             </div>
             <div class="col-lg-4 col-md-12 text-center text-xl-right text-lg-right mt-5 mb-5">
-              <p style="font-weight: 300;">made with <i style="color: #FF4848;" class="fas fa-heart"></i> by arg0dev</p>
+              <p style="font-weight: 300;">made with <i style="color: #FF4848;" class="fas fa-heart"></i> by <a href="https://arg0.dev/"><span>arg0dev</span></a></p>
               </div>
           </div>
       </div>
@@ -367,7 +363,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <a href="#top"><div class="btn btn-scrollTop"><i class="fi-xnluxl-arrow-simple" id="js-clr"></i></div></a>
+          <a href="#top" duration="1000" easing="smooth" class="scrollOnClick" scrollTo="top"><div class="btn btn-scrollTop"><i class="fi-xnluxl-arrow-simple" id="js-clr"></i></div></a>
         </div>
       </div>
     </div>
