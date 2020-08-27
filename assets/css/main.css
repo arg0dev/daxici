@@ -51,27 +51,71 @@ body {
     transition: ease-in 0.2s;
 }
 
-.report {
-
-}
-
 #rw-f {
     color: #fff;
+}
+
+#l-divider {
+    font-size: 25px;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -6.5px;
+    color: #d8d8d8;
+    font-weight: 300;
+}
+
+#l-changer {
+    margin-left: 0.85em;
 }
 
 .report::after {
     color: #fff !important;
     background: #FF4848;
-    height: 30px;
-    width: 55px;
-    margin-right: 0.50em;
-    margin-top: 0.5em;
+    height: 25px;
+    width: 45px;
+    margin-right: 5.2em;
+    margin-top: 0.70em;
     top: 0;
     bottom: 0;
     right: 0;
     content: "";
     position: absolute;
     z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.report:hover::after {
+    width: 86px;
+}
+
+.report:hover {
+    color: #fff !important;
+    transition: 0.3s ease-in;
+}
+
+.report-en::after {
+    color: #fff !important;
+    background: #FF4848;
+    height: 25px;
+    width: 58px;
+    margin-right: 5.2em;
+    margin-top: 0.70em;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.report-en:hover::after {
+    width: 92px;
+}
+
+.report-en:hover {
+    color: #fff !important;
+    transition: 0.3s ease-in;
 }
 
 header {
@@ -354,7 +398,7 @@ footer::after {
     z-index: -1;
     content: "";
     filter: grayscale();
-    background: url('https://source.unsplash.com/oxQ0egaQMfU/1920x1080');
+    background: url('../materials/dist/road.jpeg');
 }
 
 .ft-cont {
@@ -422,6 +466,15 @@ footer div.copyright{
     display: block !important;
 }
 
+.btn-switcher {
+    outline: none;
+    background: transparent;
+    border: none !important;
+    box-shadow: none;
+    margin-top: -0.25em;
+    padding: 0;
+}
+
 @media (max-width: 991px) {
  #dx-mswp {
      display: block !important;
@@ -435,12 +488,52 @@ footer div.copyright{
     display: none !important;
 }
 
+.report:hover { 
+    color: #FF4848 !important;
+}
+
+.report-en::after {
+    display: none !important;
+}
+
+.report-en:hover { 
+    color: #FF4848 !important;
+}
+
 .report {
     color: #FF4848 !important;
 }
 
+.report-en {
+    color: #ff4848 !important;
+}
+
+.en-prefix-report {
+    color: #ff4848 !important; 
+}
+
+
 #rw-f {
     color: #FF4848 !important;
+}
+
+#l-changer {
+    margin-left: 0;
+}
+
+#l-divider {
+    display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    border-bottom: 1px solid #82828212;
+    text-align: center;
+    padding-top: 1em; 
+}
+
+.navbar-collapse { 
+    padding-top: 1.5em;
 }
 
 }
