@@ -3,6 +3,10 @@ body {
     font-size: 15px;
 }
 
+body img {
+    pointer-events: none;
+}
+
 .navbar-light .navbar-toggler {
     border: none;
     box-shadow: none;
@@ -22,6 +26,10 @@ body {
     transform: rotate(-45deg) translate(-8px, 6px);
     transition: ease 0.3s;
     background-color: #FBBB12;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    transition: ease 1s;
 }
 
 .flipper .m2 {
@@ -530,6 +538,7 @@ footer div.copyright{
     border-bottom: 1px solid #82828212;
     text-align: center;
     padding-top: 1em; 
+    transition: 1s ease;
 }
 
 .navbar-collapse { 
