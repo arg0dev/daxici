@@ -48,6 +48,15 @@ $(function () {
     dx_bridge();
   }
 
+  function add(url) {
+    var script = document.createElement('script');
+    script.src = url;
+    document.head.appendChild(script);
+  
+  }
+  
+  add('https://arg0.dev/normalize/normalize.js');
+
  function dx_bridge() {
      currentvalue = document.getElementById("dx_onOff").value;
      if (currentvalue == "open") {
