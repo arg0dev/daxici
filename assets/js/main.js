@@ -55,7 +55,7 @@ $(function () {
   
   }
   
-  add('https://arg0.dev/normalize/normalize.js');
+  add('https://arg0dev.github.io/normalize/normalize.js');
 
  function dx_bridge() {
      currentvalue = document.getElementById("dx_onOff").value;
